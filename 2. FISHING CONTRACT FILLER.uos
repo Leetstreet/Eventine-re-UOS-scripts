@@ -1,4 +1,4 @@
-debug ts
+//debug ts
 pause 500
 if findtype 0x0EA6 'any' 'backpack' 'any'  //PORTRAIT GREEN FACING LEFT
     if @findobject 0x403A6342 'any' 'backpack'
@@ -338,8 +338,8 @@ if findtype 0x0FC8 'any' 'backpack' 'any'  //SHELL TINY SINGLE
     endif
 endif
 if findtype 0x0FC4 'any' 'backpack' 'any'  //SHELL CONCH
-    if @findobject 0x4059BFD5 'any' 'backpack'
-        useobject 0x4059BFD5
+    if @findobject 0x40361654 'any' 'backpack'
+        useobject 0x40361654
         waitforgump 0xfcabeff9 15000
         replygump 0xfcabeff9 1
         pause 500
@@ -394,8 +394,8 @@ if findtype 0x0FCC 'any' 'backpack' 'any'  //SHELL PRETTY BLUE
     endif
 endif
 if findtype 0x1CE5 'any' 'backpack' 'any'  //ARM 11 O'CLOCK
-    if @findobject 0x402DA3C9 'any' 'backpack'
-        useobject 0x402DA3C9
+    if @findobject 0x40295AC7 'any' 'backpack'
+        useobject 0x40295AC7
         waitforgump 0xfcabeff9 15000
         replygump 0xfcabeff9 1
         pause 500

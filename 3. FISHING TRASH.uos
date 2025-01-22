@@ -1,7 +1,9 @@
-debug ts
+//debug ts
+pause 640
 for 0 to 'fishingtrash'
+    pause 25
     if @movetype fishingtrash[] 'backpack' fishing[0] 0 0 0 'any' 'any' 0
-        pause 450
+        pause 640
     endif
 endfor
 pause 640

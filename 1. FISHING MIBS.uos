@@ -8,14 +8,12 @@ targettileoffset 0 2 0
 while not @injournal 'You pull'
    @getenemy 'gray' 'closest'
   if @inrange 'enemy' 8
-    @clearhands 'right'
+    @clearhands 'both'
     pause 640
-    equipitem 0x403EE327 2
+    equipitem fishing[4] 2
     while @inrange 'enemy' 8
-      cast 'lightning'
-      waitfortarget 2000
-      target 'enemy'
-      pause 1000
+      attack 'enemy'
+      pause 500
     endwhile
     for 0 to 'colors'
     if @findtype 0x2006 colors[] 'ground' 'any' 8
