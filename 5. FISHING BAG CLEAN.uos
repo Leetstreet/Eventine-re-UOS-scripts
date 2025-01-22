@@ -1,0 +1,65 @@
+if gumpexists 0x32a1ab0a
+    replygump 0x32a1ab0a 0
+endif
+pause 640
+while @findtype '0x2006' 'any' 'ground' '1' '2'
+    setalias 'o' 'found'
+    useobject 'o'
+    while @movetype 0x0F8B 'o' 'backpack' 0 0 0 'any' 'any'
+        pause 640
+    endwhile
+    while @movetype 0x099F 'o' 'backpack' 0 0 0 'any' 'any'
+        pause 640
+    endwhile
+    while @movetype 0x0DCA 'o' 'backpack' 0 0 0 'any' 'any'
+        pause 640
+    endwhile
+    msg '[claim'
+    waitfortarget 2000
+    while @findtype '0x2006' 'any' 'ground' '1' '2'
+        target 'found'
+        waitfortarget 2000
+        pause 250
+        if weight > 750
+            while @movetype 0x0EED 'backpack'  fishing[3] 0 0 0 'any' 'any' 0
+                pause 640
+            endwhile
+        endif
+    endwhile
+    unsetalias 'o'
+    pause 250
+    @canceltarget
+endwhile
+while @movetype 0x0EED 'backpack'  fishing[3] 0 0 0 'any' 'any' 0
+    pause 640
+endwhile
+
+while @usetype 0x099F 'any' 'backpack'
+    pause 250
+endwhile
+while @movetype 0x0EED 'backpack' fishing[3] 0 0 0 'any' 'any' 0
+    pause 640
+endwhile
+pause 640
+clickobject fishing[1]
+waitforcontext 0x4014f982 2 10000
+waitforgump 0xdd66f471 15000
+if gumpexists 0xdd66f471
+    replygump 0xdd66f471 0
+endif
+while @movetype  0x14EC 'backpack' fishing[0] 0 0 0 'any' 'any'
+    pause 640
+clickobject fishing[0]  //TRASH BAG
+waitforcontext 0x401c4395 1 10000
+endwhile
+clickobject fishing[0]  //TRASH BAG
+waitforcontext 0x401c4395 1 10000
+while @movetype  0x0FBF 'backpack' fishing[1] 0 0 0 'any' 'any'
+    pause 640
+endwhile
+while @movetype 0x0F3F 'backpack' fishing[3] 0 0 0 'any' 'any' 0
+    pause 640
+endwhile
+clickobject fishing[0]  //TRASH BAG
+waitforcontext 0x401c4395 1 10000
+playmacro '6. FISHING CONTRACT FULL CHECK.UOS'

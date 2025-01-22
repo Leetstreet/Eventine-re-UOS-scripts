@@ -1,0 +1,30 @@
+@clearignorelist
+while @findtype 0xAA8E 0x0000 'backpack' 0
+    if @property 'Found: 0' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 5' 'found' and not @property 'Found: 5' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 6' 'found' and not @property 'Found: 6' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 7' 'found' and not @property 'Found: 7' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 8' 'found' and not @property 'Found: 8' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 9' 'found' and not @property 'Found: 9' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 10' 'found' and not @property 'Found: 10' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 11' 'found' and not @property 'Found: 11' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 12' 'found' and not @property 'Found: 12' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 13' 'found' and not @property 'Found: 13' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 14' 'found' and not @property 'Found: 14' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 15' 'found' and not @property 'Found: 15' 'found'
+        ignoreobject 'found'
+    else
+        moveitem 'found' fishing[2]
+    endif
+endwhile

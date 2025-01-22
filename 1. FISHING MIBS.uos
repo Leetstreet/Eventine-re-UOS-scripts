@@ -1,0 +1,51 @@
+if not @findobject 'pole'
+  promptalias 'pole'
+endif
+@useobject 'pole'
+waitfortarget 15000
+targettileoffset 0 2 0
+@clearjournal
+while not @injournal 'You pull'
+   @getenemy 'gray' 'closest'
+  if @inrange 'enemy' 8
+    @clearhands 'right'
+    pause 640
+    equipitem 0x403EE327 2
+    while @inrange 'enemy' 8
+      cast 'lightning'
+      waitfortarget 2000
+      target 'enemy'
+      pause 1000
+    endwhile
+    for 0 to 'colors'
+    if @findtype 0x2006 colors[] 'ground' 'any' 8
+      setalias 'o' 'found'
+      usetype 0x1EA5 0x0000 'backpack' 0
+      waitfortarget 1500
+      target 'o'
+      pause 1750
+      useobject 'o'
+      pause 500
+      while @movetype 0x099F 'o' 'backpack' 0 0 0 'any' 0
+        pause 640
+      endwhile
+      while @movetype 0x14EC 'o' 'backpack' 0 0 0 'any' 0
+        pause 640
+      endwhile
+      msg '[clean'
+      pause 500
+      unsetalias 'o'
+    endif
+    endfor
+  endif
+  if @injournal 'You fail'
+    break
+  endif
+  if @injournal 'You fish a while'
+    break
+  endif
+endwhile
+  if @injournal 'heavy'
+    playmacro '2. FISHING CONTRACT FILLER.uos'
+    stop
+  endif

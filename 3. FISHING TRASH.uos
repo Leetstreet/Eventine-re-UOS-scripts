@@ -1,0 +1,10 @@
+debug ts
+for 0 to 'fishingtrash'
+    if @movetype fishingtrash[] 'backpack' fishing[0] 0 0 0 'any' 'any' 0
+        pause 450
+    endif
+endfor
+pause 640
+clickobject fishing[0]  //TRASH BAG
+waitforcontext 0x401c4395 1 10000
+playmacro '4. FISHING TREASURE REMOVE.uos'
