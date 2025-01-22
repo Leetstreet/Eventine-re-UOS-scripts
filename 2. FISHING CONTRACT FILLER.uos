@@ -1,5 +1,5 @@
 //debug ts
-pause 500
+pause 640
 if findtype 0x0EA6 'any' 'backpack' 'any'  //PORTRAIT GREEN FACING LEFT
     if @findobject 0x403A6342 'any' 'backpack'
         useobject 0x403A6342
@@ -362,8 +362,8 @@ if findtype 0x0FC6 'any' 'backpack' 'any'  //SHELL WHITE BOTTOM ORANGE TOP
     endif
 endif
 if findtype 0x0FCA 'any' 'backpack' 'any'  //SHELL LESS WHITE BOTTOM ORANGE TOP
-    if @findobject 0x403A7A4C 'any' 'backpack'
-        useobject 0x403A7A4C
+    if @findobject 0x405C9CA0 'any' 'backpack'
+        useobject 0x405C9CA0
         waitforgump 0xfcabeff9 15000
         replygump 0xfcabeff9 1
         pause 500
