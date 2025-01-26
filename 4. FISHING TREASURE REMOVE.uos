@@ -28,6 +28,9 @@ if @findtype 0x2006 0x0826 'ground' 'any' 2
     while @movetype 0x099F 'daschest' 'backpack' 0 0 0 'any' 0
         pause 640
     endwhile
+    while @movetype 0x13B2 'daschest' 'backpack' 0 0 0 0x0b8b 0
+        pause 640
+    endwhile
     while @movetype 0x0EED 'daschest' fishing[3] 0 0 0 'any' 0
         pause 640
     endwhile
@@ -69,6 +72,9 @@ for 0 to 'mibchests'
     endif
 endfor
 while @movetype 0x099F 'daschest' 'backpack' 0 0 0 'any' 0
+    pause 640
+endwhile
+while @movetype 0x13B2 'daschest' 'backpack' 0 0 0 0x0b8b 0
     pause 640
 endwhile
 while @movetype 0x0EED 'daschest' fishing[3] 0 0 0 'any' 0
