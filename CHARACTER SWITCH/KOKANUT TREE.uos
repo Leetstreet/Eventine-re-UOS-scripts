@@ -1,0 +1,6 @@
+pause 1500
+waitforcontext 0x000d4ac8 1 10000
+waitforgump 0x58082cb3 15000
+replygump 0x58082cb3 1
+pause 500
+msg '[changecharacter Xcess'

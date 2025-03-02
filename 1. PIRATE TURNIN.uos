@@ -1,0 +1,14 @@
+waitforcontext 0x00021e8b 2 10000
+waitfortarget 10000
+targettype 0x14EE 'any' 0
+waitfortarget 10000
+canceltarget
+movetype 0x14EE 'backpack' 0x10679
+waitforcontext 0x000029b7 1 10000
+waitforgump 0x4c4c6db0 15000
+replygump 0x4c4c6db0 8
+waitforgump 0x4c4c6db0 15000
+replygump 0x4c4c6db0 5
+waitforcontext 0x000029b7 1 10000
+waitforgump 0x4c4c6db0 15000
+replygump 0x4c4c6db0 4

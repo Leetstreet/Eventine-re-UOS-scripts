@@ -13,4 +13,4 @@ if @findtype 0x14EC 0x0000 0x401C439B 0
     endwhile
     playmacro '2.TMAP EMPTY CHEST.uos'
     //playmacro '3.TMAP JUST THE GOOD STUFF.uos'
-    
+endif 

@@ -61,4 +61,10 @@ while @movetype 0x0F3F 'backpack' fishing[3] 0 0 0 'any' 'any' 0
 endwhile
 clickobject fishing[0]  //TRASH BAG
 waitforcontext 0x401c4395 1 10000
+pause 640
+clickobject 0x40560AA9
+waitforcontext 0x40560aa9 2 10000
+waitforgump 0x6abce12 15000
+replygump 0x6abce12 0 "" "0" "12"
 playmacro '6. FISHING CONTRACT FULL CHECK.UOS'
+

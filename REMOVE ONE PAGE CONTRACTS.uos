@@ -1,0 +1,4 @@
+for 9
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor

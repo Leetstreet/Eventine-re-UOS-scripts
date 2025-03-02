@@ -2,12 +2,12 @@
 pause 640
 for 0 to 'fishingtrash'
     pause 25
-    if findtype fishingtrash[]  'any' 'backpack' 0
-    while @movetype fishingtrash[] 'backpack' fishing[0] 0 0 0 'any' 'any' 0
+    //if findtype fishingtrash[]  'any' 'backpack' 0
+    if @movetype fishingtrash[] 'backpack' fishing[0] 0 0 0 'any' 'any' 0
         pause 640
-    endwhile
-    pause 640
     endif
+    //pause 640
+    //endif
 endfor
 pause 640
 clickobject fishing[0]  //TRASH BAG
