@@ -1,3 +1,4 @@
+debug ts
 if gumpexists 0x32a1ab0a
     replygump 0x32a1ab0a 0
 endif
@@ -41,18 +42,18 @@ while @movetype 0x0EED 'backpack' fishing[3] 0 0 0 'any' 'any' 0
 endwhile
 pause 640
 clickobject fishing[1]
-waitforcontext 0x4014f982 2 10000
+waitforcontext fishing[1] 2 10000
 waitforgump 0xdd66f471 15000
 if gumpexists 0xdd66f471
     replygump 0xdd66f471 0
 endif
-while @movetype  0x14EC 'backpack' fishing[0] 0 0 0 'any' 'any'
+while @movetype 0x14EC 'backpack' fishing[0] 0 0 0 'any' 'any' 0
     pause 640
 clickobject fishing[0]  //TRASH BAG
-waitforcontext 0x401c4395 1 10000
+waitforcontext fishing[0] 1 10000
 endwhile
 clickobject fishing[0]  //TRASH BAG
-waitforcontext 0x401c4395 1 10000
+waitforcontext fishing[0] 1 10000
 while @movetype  0x0FBF 'backpack' fishing[1] 0 0 0 'any' 'any'
     pause 640
 endwhile
@@ -60,7 +61,7 @@ while @movetype 0x0F3F 'backpack' fishing[3] 0 0 0 'any' 'any' 0
     pause 640
 endwhile
 clickobject fishing[0]  //TRASH BAG
-waitforcontext 0x401c4395 1 10000
+waitforcontext fishing[0] 1 10000
 pause 640
 clickobject 0x40560AA9
 waitforcontext 0x40560aa9 2 10000
