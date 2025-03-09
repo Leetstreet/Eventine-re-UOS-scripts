@@ -47,7 +47,7 @@ waitforgump 0xdd66f471 15000
 if gumpexists 0xdd66f471
     replygump 0xdd66f471 0
 endif
-while @movetype 0x14EC 'backpack' fishing[0] 0 0 0 'any' 'any' 0
+while @movetype 0x14EC 'backpack' fishing[0] 0 0 0 'any' 'any'
     pause 640
 clickobject fishing[0]  //TRASH BAG
 waitforcontext fishing[0] 1 10000

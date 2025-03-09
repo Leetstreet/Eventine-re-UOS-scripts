@@ -11,6 +11,7 @@ pushlist 'fishing' 0x402A357F //ITEM CONTRACT BOOK 2
 pushlist 'fishing' 0x401C439B //BAG OF HOLDING 3
 pushlist 'fishing' 0x4022D435 //BOW 4
 pushlist 'fishing' 0x40361D6E //REGULAR BAG 5
+pushlist 'fishing' 0x4011EFC9 //SOS BOOK 6
 //[][][][][][][][][][][][][][][][][][][][]
 //FISHING TREASURE CONTAINERS
 //[][][][][][][][][][][][][][][][][][][][]
