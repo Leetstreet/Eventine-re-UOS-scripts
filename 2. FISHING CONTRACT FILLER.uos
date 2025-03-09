@@ -56,8 +56,8 @@ if findtype 0x0EA2 'any' 'backpack' 'any'  //PORTRAIT PIG FACING LEFT 2
   endif
 endif
 if findtype 0x0EA5 'any' 'backpack' 'any'  //PORTRAIT LIGHT PURPLE
-  if @findobject 0x4036C25F 'any' 'backpack'
-    useobject 0x4036C25F
+  if @findobject 0x403F727D 'any' 'backpack'
+    useobject 0x403F727D
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
@@ -232,8 +232,8 @@ if findtype 0x1B0A 'any' 'backpack' 'any'  //BONE PILE SMALL RIB LEFT
   endif
 endif
 if findtype 0x1B0E 'any' 'backpack' 'any'  //BONE PILE SMALL RIB RIGHT
-  if @findobject 0x4064743A 'any' 'backpack'
-    useobject 0x4064743A
+  if @findobject 0x4062C9AE 'any' 'backpack'
+    useobject 0x4062C9AE
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
