@@ -27,6 +27,10 @@ pushlist 'mibchests' 0x09AA
 pushlist 'mibchests' 0x0E41
 pushlist 'mibchests' 0x0E3F
 pushlist 'mibchests' 0x0E80
+pushlist 'mibchests' 0x0E3C
+pushlist 'mibchests' 0x0E3E
+pushlist 'mibchests' 0x0E40
+pushlist 'mibchests' 0x0E42
 //[][][][][][][][][][][][][][][][][][][][]
 //CORPSE COLORS
 //[][][][][][][][][][][][][][][][][][][][]
@@ -62,6 +66,7 @@ if not listexists 'fishingtrash'
     createlist 'fishingtrash'
 endif
 @clearlist 'fishingtrash'
+pushlist 'fishingtrash' 0x44C4
 pushlist 'fishingtrash' 0x0FC9
 pushlist 'fishingtrash' 0x1B1A
 pushlist 'fishingtrash' 0x1E7A

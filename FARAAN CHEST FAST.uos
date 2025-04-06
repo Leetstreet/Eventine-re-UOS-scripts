@@ -1,0 +1,128 @@
+unsetalias 'tchest'
+if not @findobject 'tchest' 'any' 'ground' 3
+    promptalias 'tchest'
+endif
+@clearjournal
+      usetype 0x14FC 'any' 'backpack'
+      waitfortarget 15000
+      target 'tchest'
+      while not @injournal 'The lock quickly'
+        pause 250
+        if @injournal 'does not appear to be'
+          break
+        endif
+      endwhile
+      pause 640
+      useobject 'tchest'
+      pause 640
+    useobject 'tchest'
+      pause 640
+while @movetype 0x099F 'tchest' 'backpack' 0 0 0 0x0000 0 //MIB
+    pause 640
+    while hits < 432
+        pause 250
+    endwhile
+    while @inrange 'enemy' 3
+        pause 500
+    endwhile
+    useobject 'tchest'
+endwhile
+while @movetype 0x14EC 'tchest' 'backpack' 0 0 0 0x0000 0 //TMAP
+    pause 640
+    while hits < 432
+        pause 250
+    endwhile
+    while @inrange 'enemy' 3
+        pause 500
+    endwhile
+    useobject 'tchest'
+endwhile
+while @movetype 0x2556 'tchest' 'backpack' 0 0 0 0x0000 0  //METAL DETECTOR
+    pause 640
+    while hits < 432
+        pause 250
+    endwhile
+    while @inrange 'enemy' 3
+        pause 500
+    endwhile
+    useobject 'tchest'
+endwhile
+while @movetype 0x1EBC 'tchest' 'backpack' 0 0 0 0x0000 0  //ARCHIALOGY TOOLS
+    pause 640
+    while hits < 432
+        pause 250
+    endwhile
+    while @inrange 'enemy' 3
+        pause 500
+    endwhile
+    useobject 'tchest'
+endwhile
+while @movetype 0x1401 'tchest' 'backpack' 0 0 0 0x0647 0  //KRYSS ARTIFACT
+    pause 640
+    while hits < 432
+        pause 250
+    endwhile
+    while @inrange 'enemy' 3
+        pause 500
+    endwhile
+    useobject 'tchest'
+endwhile
+while @movetype 0x2684 'tchest' 'backpack' 0 0 0 0x0b5b 0  //THE HUNTER ROBE
+    pause 640
+    while hits < 432
+        pause 250
+    endwhile
+    while @inrange 'enemy' 3
+        pause 500
+    endwhile
+    useobject 'tchest'
+endwhile
+while @movetype 0x2D1E 'tchest' 'backpack' 0 0 0 0x0bb6 0  //BOW ARTIFACT
+    pause 640
+    while hits < 432
+        pause 250
+    endwhile
+    while @inrange 'enemy' 3
+        pause 500
+    endwhile
+    useobject 'tchest'
+endwhile
+while @movetype 0x9985 'tchest' 'backpack' 0 0 0 0x0692 0  //EPAULETS
+    pause 640
+    while hits < 432
+        pause 250
+    endwhile
+    while @inrange 'enemy' 3
+        pause 500
+    endwhile
+    useobject 'tchest'
+endwhile
+while @movetype 0x1541 'tchest' 'backpack' 0 0 0 0x0bb0 0  //SASH
+    pause 640
+    while hits < 432
+        pause 250
+    endwhile
+    while @inrange 'enemy' 3
+        pause 500
+    endwhile
+    useobject 'tchest'
+endwhile
+while @movetype 0x2B02 'tchest' 'backpack' 0 0 0 0x01da 0  //BIG QUIVER
+    pause 640
+    while hits < 432
+        pause 250
+    endwhile
+    while @inrange 'enemy' 3
+        pause 500
+    endwhile
+    useobject 'tchest'
+endwhile
+while @findtype 0x0F52 'any''tchest'
+    if @property 'Strength Bonus' 'found' > 10
+        moveitem 'found' 'backpack'
+    else  
+    ignoreobject 'found'
+    endif
+endwhile
+
+        

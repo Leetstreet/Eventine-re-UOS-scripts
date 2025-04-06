@@ -1,0 +1,88 @@
+unsetalias 'daschest'
+pause 640
+while @findtype 0x004D 0x0826 'ground' 'any' 2
+    pause 640
+endwhile
+if not listexists 'gemsfish'
+    createlist 'gemsfish'
+    pushlist 'gemsfish' 0x3198
+    pushlist 'gemsfish' 0x3199
+    pushlist 'gemsfish' 0x3196
+    pushlist 'gemsfish' 0x3192
+    pushlist 'gemsfish' 0x3195
+    pushlist 'gemsfish' 0x3197
+    pushlist 'gemsfish' 0x3194
+    pushlist 'gemsfish' 0x3193
+endif
+for 0 to 'mibchests'
+    if @findtype mibchests[] 'any' 'backpack' 'any' 0
+        setalias 'daschest' 'found'
+        @clearjournal
+        usetype 0x14FC 'any' 'backpack'
+        waitfortarget 15000
+        target 'daschest'
+        while not @injournal 'The lock quickly'
+            pause 250
+            if @injournal 'does not appear to be'
+                break
+            endif
+        endwhile
+        pause 640
+        useobject 'found'
+        pause 640
+        useobject 'found'
+    endif
+    if @findtype mibchests[] 'any' 'backpack' 'any' 0
+        while @movetype 0x14EE 'daschest' 'backpack' 0 0 0 'any' 0
+            pause 640
+        endwhile
+        while @movetype 0x099F 'daschest' 'backpack' 0 0 0 'any' 0
+            pause 640
+        endwhile
+        while @movetype 0x13B2 'daschest' 'backpack' 0 0 0 0x0b8b 0
+            pause 640
+        endwhile
+        while @movetype 0x0EED 'daschest' fishing[3] 0 0 0 'any' 0
+            pause 640
+        endwhile
+        while @movetype 0x0DCA 'daschest' fishing[5] 0 0 0 'any' 0
+            pause 640
+        endwhile
+        while @movetype 0x14ED 'daschest' fishing[5] 0 0 0 'any' 0
+            pause 640
+        endwhile
+        while @movetype 0x2556 'daschest' fishing[5] 0 0 0 'any' 0
+            pause 640
+        endwhile
+        while @movetype 0x14EC 'daschest' fishing[5] 0 0 0 'any' 0
+            pause 640
+        endwhile
+        while @movetype 0xAA8E 'daschest' fishing[2] 0 0 0 'any' 0
+            pause 640
+        endwhile
+        while @movetype 0x1EA5 'daschest' fishing[5] 0 0 0 'any' 0
+            pause 640
+        endwhile
+        while @movetype 0x0FC0 'daschest' fishing[6] 0 0 0 'any' 0
+            pause 640
+        endwhile
+        while @movetype 0x0FBF 'daschest' fishing[6] 0 0 0 'any' 0
+            pause 640
+        endwhile
+        
+    endif
+endfor
+//moveitem 'daschest' fishing[0] -1 -1 1
+//waitforgump 0xef047f1f 15000
+//replygump 0xef047f1f 2 "1" "" ""
+//pause 640
+clickobject 0x402ac45a
+waitforcontext 0x402ac45a 2 10000
+waitforgump 0x6abce12 15000
+replygump 0x6abce12 0 "" "0" "12"
+pause 640
+clickobject 0x40560AA9
+waitforcontext 0x40560aa9 2 10000
+waitforgump 0x6abce12 15000
+replygump 0x6abce12 0 "" "0" "12"
+pause 640

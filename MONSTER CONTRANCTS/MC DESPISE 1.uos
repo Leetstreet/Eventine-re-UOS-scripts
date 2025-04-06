@@ -1,0 +1,58 @@
+useobject contracts[9]
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "troll"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "troll"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "head"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "head"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "mong"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "mong"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "liz"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "liz"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+useobject contracts[7]
+pause 500
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "eart"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "eart"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor

@@ -1,6 +1,6 @@
-for 282
+for 262
     replygump 0xb2f21f1a 100 "" "0,1,2" ",,N"
     waitforgump 0xb2f21f1a 15000
-    pause 250
+    pause 150
 endfor
 

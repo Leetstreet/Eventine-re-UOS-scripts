@@ -1,0 +1,14 @@
+if not listexists 'bunnyeggs'
+    createlist 'bunnyeggs'
+endif
+@clearlist 'bunnyeggs'
+pushlist 'bunnyeggs' 0x41BD
+pushlist 'bunnyeggs' 0x41BE
+pushlist 'bunnyeggs' 0x41BF
+for 0 to 'bunnyeggs'
+    while @findtype bunnyeggs[] 'any' 'ground'
+        headmsg 'I see eggs'
+        pause 1000
+    endwhile
+endfor
+pause 500

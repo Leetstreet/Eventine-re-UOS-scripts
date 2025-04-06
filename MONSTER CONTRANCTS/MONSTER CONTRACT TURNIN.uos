@@ -1,0 +1,64 @@
+if not listexists 'contractvar'
+    createlist 'contractvar'
+endif
+@clearlist 'contractvar'
+pushlist 'contractvar' 0x401211ED //FULL BOOK 0
+pushlist 'contractvar' contracts[1] //EMPTY BOOK 1
+//LOOKS FOR CONTRACTS
+useobject contractvar[0]
+pause 250
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 10
+//[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+//PAUSE WAITING FOR CONTRACT FROM BOOK
+//[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+while not @findtype 0xAA8E 'any' 'backpack' 0
+    pause 50
+endwhile
+pause 250
+//[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+//MOVES CONTRACT TO CONTRACT GIVER (TURNS IN)
+//[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+while @movetype 0xAA8E 'backpack' '0x000D4AC8' 0 0 0 0x0000 'any' 3
+    pause 250
+endwhile
+//[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+//BROKEN CHECK STILL HAS AN UNUSED CONTRACT IN BACKPACK
+//[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+while @findtype 0xAA8E 'any' 'backpack' 0
+    headmsg 'I am stuck with a full contract'
+    pause 250
+endwhile
+//[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+//USES GOLD CHECK
+//[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+while usetype 0x14F0 'any' 'backpack' 0
+    pause 50
+endwhile
+//[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+//ASKS FOR A NEW CONTRACT
+//[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+waitforcontext 0x000d4ac8 1 10000
+waitforgump 0x58082cb3 15000
+replygump 0x58082cb3 1
+while not @findtype 0xAA8E 'any' 'backpack' 0
+    pause 250
+endwhile
+pause 250
+//[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+//PUTS CONTRACT IN EMPTY BOOK
+//[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+while @movetype 0xAA8E 'backpack' contractvar[1] 0 0 0 0x0000 'any' 3
+    pause 250
+endwhile
+waitforgump 0x6d5af08f 3000
+replygump 0x6d5af08f 0
+//[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+//Stuck Check
+//[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+while @findtype 0xAA8E 'any' 'backpack' 0
+    headmsg 'I am stuck with an empty contract'
+    pause 1000
+endwhile
+
+

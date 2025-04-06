@@ -1,0 +1,120 @@
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//Runebook Timer
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+if not timerexists 'RB'
+  createtimer 'RB'
+  settimer 'RB' 5500
+endif
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//HATCHET
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+if not findobject 'hatchet' 0x0000 'backpack' 0
+  if @findtype 0x0F43 0x0000 'backpack' 0
+    setalias 'hatchet' 'found'
+    pause 250
+  else
+    headmsg 'OUT OF HATCHETS'  
+    stop
+  endif
+endif
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//Ore Graphics
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+if not listexists 'wood'
+  createlist 'wood'
+  pushlist 'wood' 0x1BDD
+endif
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//BOOK SETTER
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+if not listexists 'woodbook'
+  createlist 'woodbook'
+endif
+@clearlist 'woodbook'
+pushlist 'woodbook' 0x40123E2E //0
+pushlist 'woodbook' 0x402170D5 //1
+pushlist 'woodbook' 0x403AF831 //2
+pushlist 'woodbook' 0x40130830 //3
+pushlist 'woodbook' 0x406DBD56 //4
+pushlist 'woodbook' 0x40561689 //5
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//RECALL TO LOCATION
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+for 0 to 'woodbook'
+  while timer 'RB' <= 650
+    pause 250
+  endwhile
+  useobject woodbook[]
+  waitforgump 0x554b87f3 15000
+  replygump 0x554b87f3 7
+  settimer 'RB' 0
+  pause 2000
+  //[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+  //MINING Section
+  //[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+  @clearjournal
+  while not @injournal 'not enough'
+    targetresource 'hatchet' 'wood'
+    while not @injournal 'You placed some'
+      if @injournal 'use an axe on that'
+        @clearjournal
+        break
+      endif
+    if @injournal 'not enough wood here to harvest'
+        break
+      endif
+      if @injournal 'corpse'
+        @clearjournal
+        break
+      endif
+      if @injournal 'You hack at'
+        @clearjournal
+        break
+      endif
+    endwhile
+  endwhile
+  pause 250
+  //[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+  //CUT UP WOOD USE KEY
+  //[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+  while @findtype 0x1BDD 'any' 'backpack' 0
+    usetype 0x0F43 0x0000 'backpack' 0
+    waitfortarget 15000
+    target 'found'
+    pause 250
+  endwhile
+  clickobject 0x405D612F
+  waitforcontext 0x405d612f 2 10000
+  pause 250
+  waitforgump 0x6abce12 15000
+  pause 250
+  replygump 0x6abce12 0 "" "0" "100"
+  pause 250
+  //[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+  //REMOVE RUNE
+  //[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+  useobject woodbook[]
+  waitforgump 0x554b87f3 15000
+  replygump 0x554b87f3 3
+  settimer 'RB' 0
+  while not @findtype 0x1f14 'any' 'backpack'
+    pause 500
+  endwhile
+  pause 250
+  //[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+  //PUTS RUNE BACK
+  //[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+  while @findtype 0x1f14 'any' 'backpack'
+    moveitem 'found' woodbook[]
+    pause 250
+  endwhile
+  pause 400
+endfor
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]

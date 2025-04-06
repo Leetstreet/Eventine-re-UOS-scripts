@@ -1,0 +1,12 @@
+//PIRATE MAP GETTER
+if @findtype 0x14EC 0x0000 'backpack' 0
+    movetype 0x14EC 'backpack' 0x401C4395 0 0 0 'any'
+    pause 1000
+    clickobject 0x401C4395
+endif
+waitforcontext 0x401c4395 1 10000
+pause 500
+waitforcontext 0x000029b4 1 10000
+pause 500
+usetype 0x14EC 0x0000 'backpack' 0
+

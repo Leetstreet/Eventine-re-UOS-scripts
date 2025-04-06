@@ -1,5 +1,5 @@
 if not listexists 'mibchests'
-    createlist 'mibchests'
+  createlist 'mibchests'
 endif
 @clearlist 'mibchests'
 pushlist 'mibchests' 0x09AB
@@ -13,7 +13,7 @@ pushlist 'mibchests' 0x0E80
 pushlist 'mibchests' 0x0E40
 unsetalias 'daschest'
 if not listexists 'gems'
-    createlist 'gems'
+  createlist 'gems'
 endif
 @clearlist 'gems'
 pushlist 'gems' 0x0F10
@@ -37,7 +37,7 @@ pushlist 'gems' 0x0F2D
 pushlist 'gems' 0x0F21
 pushlist 'gems' 0x0F26
 if not listexists 'regs'
-    createlist 'regs'
+  createlist 'regs'
 endif
 @clearlist 'regs'
 pushlist 'regs' 0x0F7A
@@ -56,7 +56,7 @@ pushlist 'regs' 0x1F14
 pushlist 'regs' 0x0EF3
 pushlist 'regs' 0x0F7D
 if not listexists 'scrolls'
-    createlist 'scrolls'
+  createlist 'scrolls'
 endif
 @clearlist 'scrolls'
 pushlist 'scrolls' 0x1F3F
@@ -125,7 +125,7 @@ pushlist 'scrolls' 0x1F6A // Summon Earth Elemental
 pushlist 'scrolls' 0x1F6B // Summon Fire Elemental
 pushlist 'scrolls' 0x1F6C // Summon Water Elemental
 if not listexists 'keepers'
-    createlist 'keepers'
+  createlist 'keepers'
 endif
 @clearlist 'keepers'
 pushlist 'keepers' 0x0F50
@@ -337,208 +337,155 @@ pushlist 'keepers' 0x1089
 pushlist 'keepers' 0x9E28 //recipes
 pushlist 'keepers' 0x46AE
 //pushlist 'keepers'
-while @findtype 0x004D 0x0826 'ground' 'any' 2
-    pause 640
-endwhile
-pause 640
-if @findtype 0x2006 0x0826 'ground' 'any' 2
-    setalias 'this' 'found'
-    useobject 'this'
-    for 0 to 'mibchests'
-        if findtype mibchests[] 'any' 'this' 'any' 1
-            setalias 'daschest' 'found'
-            @clearjournal
-            usetype 0x14FC 'any' 'backpack'
-            waitfortarget 15000
-            target 'daschest'
-            while not @injournal 'The lock quickly'
-                pause 250
-            endwhile
-            pause 250
-            useobject 'daschest'
-            pause 640
-            useobject 'dashchest'
-        endif
-    endfor
-    //if @findobject 'daschest' 'any' 'this' 'any' 0
-    while @movetype 0x099F 'daschest' 'backpack' 0 0 0 'any' 0
-        pause 640
-    endwhile
-    while @movetype 0x0EED 'daschest' 0x401C439B 0 0 0 'any' 0
-        pause 640
-    endwhile
-    while @movetype 0x0DCA 'daschest' 'backpack' 0 0 0 'any' 0
-        pause 640
-    endwhile
-    while @movetype 0x14ED 'daschest' 'backpack' 0 0 0 'any' 0
-        pause 640
-    endwhile
-    while @movetype 0x2556 'daschest' 'backpack' 0 0 0 'any' 0
-        pause 640
-    endwhile
-    while @movetype 0x14EC 'daschest' 'backpack' 0 0 0 'any' 0
-        pause 640
-    endwhile
-    while @movetype 0xAA8E 'daschest' 0x402A357F 0 0 0 'any' 0
-        pause 640
-    endwhile
-    //endif
-    for 0 to 'gems'
-        while @movetype gems[] 'daschest' 'backpack' 0 0 0 'any' 'any' 3
-            pause 640
-        endwhile
-    endfor
-    clickobject 0x40560AA9
-    waitforcontext 0x40560aa9 2 10000
-    waitforgump 0x6abce12 15000
-    replygump 0x6abce12 0 "" "0" "12"
-    for 0 to 'regs'
-        while @movetype regs[] 'daschest' 0x401C439B 0 0 0 'any' 'any' 3
-            pause 640
-        endwhile
-    endfor
-    clickobject 0x402AC45A
-    waitforcontext 0x402ac45a 2 10000
-    waitforgump 0x6abce12 15000
-    replygump 0x6abce12 0 "" "0" "12"
-    for 0 to 'scrolls'
-        while @movetype scrolls[] 'daschest' 0x401C4395 0 0 0 'any' 'any' 3
-            pause 640
-        endwhile
-    endfor
-    for 0 to 'keepers'
-        while @movetype keepers[] 'daschest' 0x401C4395 0 0 0 'any' 'any' 3
-            pause 640
-        endwhile
-    endfor
-    while @movetype 0x0EED 'daschest' 0x401C439B 0 0 0 'any' 0
-        pause 640
-    endwhile
-    while @movetype 0x0DCA 'daschest' 'backpack' 0 0 0 'any' 0
-        pause 640
-    endwhile
-    while @movetype 0x0FC0 'daschest' 0x4014F982 0 0 0 'any' 0
-        pause 640
-    endwhile
-    while @movetype 0x571C 'daschest' 'backpack' 0 0 0 'any' 0
-        pause 640
-    endwhile
-    pause 640
-    clickobject 0x4030ed85
-    waitforcontext 0x4030ed85 2 10000
-    waitforgump 0x6abce12 15000
-    replygump 0x6abce12 0 "" "0" "100"
-    pause 640
-    moveitem 'daschest' 'backpack' -1 -1 1
-    pause 640
-    clickobject 0x401c4395
-    waitforcontext 0x401c4395 1 10000
-endif
-@unsetalias 'daschest'
 for 0 to 'mibchests'
-    if findtype mibchests[] 'any' 'ground' 'any' 1
-        setalias 'daschest' 'found'
-        @clearjournal
-        usetype 0x14FC 'any' 'backpack'
-        waitfortarget 15000
-        target 'daschest'
-        while not @injournal 'The lock quickly'
-            pause 250
-            if @injournal 'This does not appear to be locked'
-                break
-            endif
-        endwhile
-        useobject 'daschest'
-        pause 640
-        useobject 'daschest'
-    endif
+  if findtype mibchests[] 'any' 'ground' 'any' 1
+    setalias 'daschest' 'found'
+    @clearjournal
+    usetype 0x14FC 'any' 'backpack'
+    waitfortarget 15000
+    target 'daschest'
+    while not @injournal 'The lock quickly'
+      pause 250
+      if @injournal 'This does not appear to be locked'
+        break
+      endif
+    endwhile
+    useobject 'daschest'
+    pause 640
+    useobject 'daschest'
+  endif
 endfor
 if @findobject 'daschest' 'any' 'ground' 'any' 1
-    while @movetype 0x099F 'daschest' 'backpack' 0 0 0 'any' 0
-        pause 640
-    endwhile
-    while @movetype 0x0EED 'daschest' 0x401C439B 0 0 0 'any' 0
-        pause 640
-    endwhile
-    while @movetype 0x0DCA 'daschest' 'backpack' 0 0 0 'any' 0
-        pause 640
-    endwhile
-    while @movetype 0x14ED 'daschest' 'backpack' 0 0 0 'any' 0
-        pause 640
-    endwhile
-    while @movetype 0x2556 'daschest' 'backpack' 0 0 0 'any' 0
-        pause 640
-    endwhile
-    while @movetype 0x14EC 'daschest' 'backpack' 0 0 0 'any' 0
-        pause 640
-    endwhile
-    while @movetype 0xAA8E 'daschest' 0x402A357F 0 0 0 'any' 0
-        pause 640
+  while @movetype 0x099F 'daschest' 'backpack' 0 0 0 'any' 0
+    while @inrange 'enemy' 3
+      pause 500
     endwhile
     pause 640
-    for 0 to 'gems'
-        while @movetype gems[] 'daschest' 'backpack' 0 0 0 'any' 'any' 3
-            pause 640
+  endwhile
+  while @movetype 0x0EED 'daschest' 0x401C439B 0 0 0 'any' 0
+    while @inrange 'enemy' 3
+      pause 500
+    endwhile
+    pause 640
+  endwhile
+  while @movetype 0x0DCA 'daschest' 'backpack' 0 0 0 'any' 0
+    while @inrange 'enemy' 3
+      pause 500
+    endwhile
+    pause 640
+  endwhile
+  while @movetype 0x14ED 'daschest' 'backpack' 0 0 0 'any' 0
+    while @inrange 'enemy' 3
+      pause 500
+    endwhile
+    pause 640
+  endwhile
+  while @movetype 0x2556 'daschest' 'backpack' 0 0 0 'any' 0
+    while @inrange 'enemy' 3
+      pause 500
+    endwhile
+    pause 640
+  endwhile
+  while @movetype 0x14EC 'daschest' 'backpack' 0 0 0 'any' 0
+    while @inrange 'enemy' 3
+      pause 500
+    endwhile
+    pause 640
+  endwhile
+  while @movetype 0xAA8E 'daschest' 0x402A357F 0 0 0 'any' 0
+    while @inrange 'enemy' 3
+      pause 500
+    endwhile
+    pause 640
+  endwhile
+  pause 640
+  for 0 to 'gems'
+    while @movetype gems[] 'daschest' 'backpack' 0 0 0 'any' 'any' 3
+      while @inrange 'enemy' 3
+        pause 500
+      endwhile
+      pause 640
+    endwhile
+  endfor
+  pause 250
+  clickobject 0x40560AA9
+  waitforcontext 0x40560aa9 2 10000
+  waitforgump 0x6abce12 15000
+  replygump 0x6abce12 0 "" "0" "12"
+  pause 400
+  for 0 to 'regs'
+    if @findtype regs[] 'any' 'daschest'
+      while @movetype regs[] 'daschest' 'backpack' 0 0 0 'any' 'any' 3
+        while @inrange 'enemy' 3
+          pause 500
         endwhile
-    endfor
-    pause 250
-    clickobject 0x40560AA9
-    waitforcontext 0x40560aa9 2 10000
-    waitforgump 0x6abce12 15000
-    replygump 0x6abce12 0 "" "0" "12"
-    pause 400
-    for 0 to 'regs'
-        if @findtype regs[] 'any' 'daschest'
-            while @movetype regs[] 'daschest' 'backpack' 0 0 0 'any' 'any' 3
-                pause 640
-            endwhile
-        endif
-    endfor
-    pause 250
-    clickobject 0x402AC45A
-    waitforcontext 0x402ac45a 2 10000
-    waitforgump 0x6abce12 15000
-    replygump 0x6abce12 0 "" "0" "12"
-    pause 400
-    for 0 to 'scrolls'
-        if @findtype scrolls[] 'any' 'daschest'
-            while @movetype scrolls[] 'daschest' 0x401C4395 0 0 0 'any' 'any' 3
-                pause 640
-            endwhile
-        endif
-    endfor
-    pause 400
-    for 0 to 'keepers'
-        if @findtype keepers[] 'any' 'daschest'
-            while @movetype keepers[] 'daschest' 0x401C4395 0 0 0 '0x0000' 'any' 3
-                pause 640
-            endwhile
-        endif
-        if contents 0x401C4395 > 45
-            clickobject 0x401c4395
-            waitforcontext 0x401c4395 1 10000
-        endif
-    endfor
-    while @movetype 0x0EED 'daschest' 0x401C439B 0 0 0 'any' 0
         pause 640
-    endwhile
-    while @movetype 0x0DCA 'daschest' 0x401C439B 0 0 0 'any' 0
+      endwhile
+    endif
+  endfor
+  pause 250
+  clickobject 0x402AC45A
+  waitforcontext 0x402ac45a 2 10000
+  waitforgump 0x6abce12 15000
+  replygump 0x6abce12 0 "" "0" "12"
+  pause 400
+  for 0 to 'scrolls'
+    if @findtype scrolls[] 'any' 'daschest'
+      while @movetype scrolls[] 'daschest' 0x401C4395 0 0 0 'any' 'any' 3
+        while @inrange 'enemy' 3
+          pause 500
+        endwhile
         pause 640
-    endwhile
-    while @movetype 0x0FC0 'daschest' 0x4014F982 0 0 0 'any' 0
+      endwhile
+    endif
+  endfor
+  pause 400
+  for 0 to 'keepers'
+    if @findtype keepers[] 'any' 'daschest'
+      while @movetype keepers[] 'daschest' 0x401C4395 0 0 0 '0x0000' 'any' 3
+        while @inrange 'enemy' 3
+          pause 500
+        endwhile
         pause 640
-    endwhile
-    while @movetype 0x571C 'daschest' 'backpack' 0 0 0 'any' 0
-        pause 640
+      endwhile
+    endif
+    if contents 0x401C4395 > 45
+      clickobject 0x401c4395
+      waitforcontext 0x401c4395 1 10000
+    endif
+  endfor
+  while @movetype 0x0EED 'daschest' 0x401C439B 0 0 0 'any' 0
+    while @inrange 'enemy' 3
+      pause 500
     endwhile
     pause 640
-    clickobject 0x4030ed85
-    waitforcontext 0x4030ed85 2 10000
-    waitforgump 0x6abce12 15000
-    replygump 0x6abce12 0 "" "0" "100"
+  endwhile
+  while @movetype 0x0DCA 'daschest' 0x401C439B 0 0 0 'any' 0
+    while @inrange 'enemy' 3
+      pause 500
+    endwhile
     pause 640
-    moveitem 'daschest' 'backpack' -1 -1 1
+  endwhile
+  while @movetype 0x0FC0 'daschest' 0x4014F982 0 0 0 'any' 0
+    while @inrange 'enemy' 3
+      pause 500
+    endwhile
     pause 640
-    clickobject 0x401c4395
-    waitforcontext 0x401c4395 1 10000
+  endwhile
+  while @movetype 0x571C 'daschest' 'backpack' 0 0 0 'any' 0
+    while @inrange 'enemy' 3
+      pause 500
+    endwhile
+    pause 640
+  endwhile
+  pause 640
+  clickobject 0x4030ed85
+  waitforcontext 0x4030ed85 2 10000
+  waitforgump 0x6abce12 15000
+  replygump 0x6abce12 0 "" "0" "100"
+  pause 640
+  moveitem 'daschest' 'backpack' -1 -1 1
+  pause 640
+  clickobject 0x401c4395
+  waitforcontext 0x401c4395 1 10000
 endif

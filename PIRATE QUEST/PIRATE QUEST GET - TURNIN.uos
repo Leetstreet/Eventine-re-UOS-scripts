@@ -1,0 +1,44 @@
+//PIRATE QUEST ACCEPT
+if @findobject 0x000029B7
+    if @findtype 0x14EE 0x04ea 'backpack' 0
+        waitforcontext 0x000029b7 1 10000
+        waitforgump 0x4c4c6db0 15000
+        replygump 0x4c4c6db0 8
+        waitforgump 0x4c4c6db0 15000
+        replygump 0x4c4c6db0 5
+    endif
+waitforcontext 0x000029b7 1 10000
+waitforgump 0x4c4c6db0 15000
+replygump 0x4c4c6db0 4
+endif
+if @findobject 0x000029B4 'any' 'any' 'ground' 3
+    //PIRATE MAP GETTER
+if @findtype 0x14EC 0x0000 'backpack' 0
+    movetype 0x14EC 'backpack' 0x401C4395 0 0 0 'any'
+    pause 1000
+    clickobject 0x401C4395
+endif
+waitforcontext 0x401c4395 1 10000
+pause 500
+waitforcontext 0x000029b4 1 10000
+pause 500
+usetype 0x14EC 0x0000 'backpack' 0
+endif
+if @findtype 0xA307 0x0000 'backpack' 0
+    //PIRATE BURY CHEST
+usetype 0x0F39 0x0000 'backpack'
+waitfortarget 15000
+targettype 0x14EC 0x0000 0
+waitfortarget 15000
+targettype 0xA307 0x0000 0
+pause 1000
+waitforcontext 0x00021e8b 2 10000
+waitfortarget 10000
+targettype 0x14EE 0x0000 0
+pause 500
+canceltarget
+endif
+if @findobject 0x000029B3 'any' 'any' 'ground' 3
+    //PIRATE CHEST GETTER
+waitforcontext 0x000029b3 1 10000
+endif

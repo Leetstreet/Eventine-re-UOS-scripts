@@ -1,0 +1,4 @@
+cast "Mana Spring"
+waitfortarget 10000
+target 0x00040366
+pause 30000

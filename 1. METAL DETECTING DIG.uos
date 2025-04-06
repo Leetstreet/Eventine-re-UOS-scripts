@@ -1,0 +1,22 @@
+if not @findobject 'shovel'
+    promptalias 'shovel'
+endif
+@useobject 'shovel'
+waitfortarget 15000
+targettileoffset 1 1 1
+@clearjournal
+while not @injournal 'You dig up'
+    pause 500
+    if @injournal 'You fail to dig'
+        break
+    endif
+    if @injournal 'You have accidently disturbed'
+        break
+    endif
+endwhile
+pause 640
+if @injournal 'You dig up a Treasure Chest'
+playmacro '2. MD CLEAN CHEST.uos'
+stop
+endif
+//playmacro '3.TMAP JUST THE GOOD STUFF.uos'

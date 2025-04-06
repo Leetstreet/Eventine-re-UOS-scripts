@@ -1,0 +1,77 @@
+debug ts
+@clearignorelist
+while findtype 0xAA8E 'any' 'backpack' 'any' 0
+    if  property 'An Item Contract' 'found'
+        ignoreobject 'found'
+        elseif property 'Monster: Earth' 'found'
+        moveitem 'found' contracts[7]
+        pause 640
+        elseif property 'Monster: Wraiths' 'found' or property 'Monster: Spectres' 'found'
+        moveitem 'found' contracts[8]
+        pause 640
+        elseif property 'Monster: Skeleton' 'found' or property 'Monster: Shades' 'found'
+        moveitem 'found' contracts[8]
+        pause 640
+        elseif property 'Monster: Liches' 'found' or property 'Monster: Mummies' 'found'
+        moveitem 'found' contracts[8]
+        pause 640
+        elseif property 'Monster: Harp' 'found'
+        moveitem 'found' contracts[4]
+        pause 640
+        elseif property 'Monster: Air' 'found'
+        moveitem 'found' contracts[7]
+        pause 640
+        elseif property 'Monster: Gazer' 'found' or property 'Monster: Imps' 'found'
+        moveitem 'found' contracts[4]
+        pause 640
+        elseif property 'Monster: Garg' 'found' or property 'Monster: Orc' 'found'
+        moveitem 'found' contracts[4]
+        pause 640
+        elseif property 'Monster: Water' 'found'
+        moveitem 'found' contracts[7]
+        pause 640
+        elseif property 'Monster: Giant Spider' 'found' or property 'Monster: Scorp' 'found'
+        moveitem 'found' contracts[4]
+        pause 640
+        elseif property 'Monster: Terathan' 'found'
+        moveitem 'found' contracts[3]
+        pause 640
+        elseif property 'Monster: Ophidian' 'found'
+        moveitem 'found' contracts[2]
+        pause 640
+        elseif property 'Monster: Dread' 'found'
+        moveitem 'found' contracts[5]
+        pause 640
+        elseif property 'Monster: Lich Lords' 'found'
+        moveitem 'found' contracts[8]
+        pause 640
+        elseif property 'Monster: Giant Serpent' 'found'
+        moveitemoffset 'found' 'ground' 1 1 1 'any'
+        pause 640
+        elseif property 'Monster: Snow' 'found'
+        moveitem 'found' contracts[7]
+        pause 640
+        elseif property 'Monster: White' 'found' or property 'Monster: Frost' 'found'
+        moveitem 'found' contracts[5]
+        pause 640
+        elseif property 'Monster: Blood' 'found'
+        moveitem 'found' contracts[7]
+        pause 640
+        elseif property 'Monster: Fire' 'found'
+        moveitem 'found' contracts[7]
+        pause 640
+        elseif property 'Monster: Lizardmen' 'found' or property 'Monster: Mongbat' 'found'
+        moveitem 'found' contracts[9]
+        pause 640
+        elseif property 'Monster: Troll' 'found' or property 'Monster: Ettins' 'found'
+        moveitem 'found' contracts[9]
+        pause 640
+        elseif property 'Monster: Headless' 'found' or property 'Monster: Ogres' 'found'
+        moveitem 'found' contracts[9]
+        pause 640
+        else
+        moveitem 'found' contracts[0]
+        pause 640
+    endif
+endwhile
+

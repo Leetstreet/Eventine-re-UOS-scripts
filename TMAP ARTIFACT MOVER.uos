@@ -1,0 +1,17 @@
+promptalias 'fromhere'
+promptalias 'tohere'
+while @movetype 0x13CD 'fromhere' 'tohere' 0 0 0 0x0034
+    pause 640
+endwhile
+while @movetype 0x1411 'fromhere' 'tohere' 0 0 0 0x047e
+    pause 640
+endwhile
+while @movetype 0x141B 'fromhere' 'tohere' 0 0 0 0x0836
+    pause 640
+endwhile
+while @movetype 0x140E 'fromhere' 'tohere' 0 0 0 0x0045
+    pause 640
+endwhile
+while @movetype 0x1450 'fromhere' 'tohere' 0 0 0 0x0497
+    pause 640
+endwhile

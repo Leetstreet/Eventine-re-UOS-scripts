@@ -1,0 +1,101 @@
+useobject 0x40602417
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "troll"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "troll"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "ogre"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "ogre"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "lizard"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "lizard"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "mong"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "mong"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+useobject 0x404F3BB7
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "harp"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "harp"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "spider"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "spider"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "orc"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "orc"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "gazer"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "gazer"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "garg"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "garg"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor

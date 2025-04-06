@@ -1,4 +1,5 @@
 //debug ts
+@clearignorelist
 if findtype 0x0DCA 0x08a0 'backpack' 'any'  //SPECIAL FISHING NET
   if @findobject 0x403A68D4 'any' 'backpack'
     useobject 0x403A68D4
@@ -8,56 +9,56 @@ if findtype 0x0DCA 0x08a0 'backpack' 'any'  //SPECIAL FISHING NET
   endif
 endif
 if findtype 0x0EA0 'any' 'backpack' 'any'  //BIG PAINTING
-  if @findobject 0x40139748 'any' 'backpack'
-    useobject 0x40139748
+  if @findobject 0x402060A1 'any' 'backpack'
+    useobject 0x402060A1
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x0EA6 'any' 'backpack' 'any'  //PORTRAIT GREEN FACING LEFT
-  if @findobject 0x4036C231 'any' 'backpack'
-    useobject 0x4036C231
+  if @findobject 0x40247B2B 'any' 'backpack'
+    useobject 0x40247B2B
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x0E9F 'any' 'backpack' 'any'  //PORTRAIT YELLOW FACING LEFT
-  if @findobject 0x40141D1F 'any' 'backpack'
-    useobject 0x40141D1F
+  if @findobject 0x40247B25 'any' 'backpack'
+    useobject 0x40247B25
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x0EA4 'any' 'backpack' 'any'  //PORTRAIT PIG FACING RIGHT
-  if @findobject 0x403407E7 'any' 'backpack'
-    useobject 0x403407E7
+  if @findobject 0x402060C5 'any' 'backpack'
+    useobject 0x402060C5
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x0EA3 'any' 'backpack' 'any'  //PORTRAIT PIG FACING LEFT
-  if @findobject 0x404173D6 'any' 'backpack'
-    useobject 0x404173D6
+  if @findobject 0x40301BBA 'any' 'backpack'
+    useobject 0x40301BBA
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x0EA2 'any' 'backpack' 'any'  //PORTRAIT PIG FACING LEFT 2
-  if @findobject 0x404173D6 'any' 'backpack'
-    useobject 0x404173D6
+  if @findobject 0x40301BBA 'any' 'backpack'
+    useobject 0x40301BBA
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x0EA5 'any' 'backpack' 'any'  //PORTRAIT LIGHT PURPLE
-  if @findobject 0x403F727D 'any' 'backpack'
-    useobject 0x403F727D
+  if @findobject 0x402060C4 'any' 'backpack'
+    useobject 0x402060C4
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
@@ -80,8 +81,8 @@ if findtype 0x0EA7 'any' 'backpack' 'any'  //PORTRAIT RED LEFT
   endif
 endif
 if findtype 0x13A9 'any' 'backpack' 'any'  //PILLOW THICK GREY POINT LEFT
-  if @findobject 0x40602C32 'any' 'backpack'
-    useobject 0x40602C32
+  if @findobject 0x403017F4 'any' 'backpack'
+    useobject 0x403017F4
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
@@ -96,24 +97,24 @@ if findtype 0x13AA 'any' 'backpack' 'any'  //PILLOW THICK GREY POINT RIGHT
   endif
 endif
 if findtype 0x13A5 'any' 'backpack' 'any'  //PILLOW LONG NORTHWEST
-  if @findobject 0x401E2D38 'any' 'backpack'
-    useobject 0x401E2D38
+  if @findobject 0x402060A3 'any' 'backpack'
+    useobject 0x402060A3
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x13A4 'any' 'backpack' 'any'  //PILLOW LONG NORTHEAST
-  if @findobject 0x402F3B3C 'any' 'backpack'
-    useobject 0x402F3B3C
+  if @findobject 0x40247ABA 'any' 'backpack'
+    useobject 0x40247ABA
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x13AE 'any' 'backpack' 'any'  //PILLOW THICK LIGHT GREY POINT LEFT
-  if @findobject 0x4032744E 'any' 'backpack'
-    useobject 0x4032744E
+  if @findobject 0x40247ABB 'any' 'backpack'
+    useobject 0x40247ABB
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
@@ -152,8 +153,8 @@ if findtype 0x13AB 'any' 'backpack' 'any'  //PILLOW TASSELS REGULAR LIGHT
   endif
 endif
 if findtype 0x13A7 'any' 'backpack' 'any'  //PILLOW DARK CIRCLE
-  if @findobject 0x402654F6 'any' 'backpack'
-    useobject 0x402654F6
+  if @findobject 0x4033124B 'any' 'backpack'
+    useobject 0x4033124B
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
@@ -168,8 +169,8 @@ if findtype 0x13A8 'any' 'backpack' 'any'  //PILLOW LIGHT CIRCLE
   endif
 endif
 if findtype 0x1AE4 'any' 'backpack' 'any'  //SKULL VERTICAL FACING STRAIGHT
-  if @findobject 0x4036C471 'any' 'backpack'
-    useobject 0x4036C471
+  if @findobject 0x40247B9C 'any' 'backpack'
+    useobject 0x40247B9C
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
@@ -184,24 +185,24 @@ if findtype 0x1AE2 'any' 'backpack' 'any'  //SKULL VERTICAL FACING RIGHT
   endif
 endif
 if findtype 0x1AE0 'any' 'backpack' 'any'  //SKULL HORIZONTAL FACING LEFT
-  if @findobject 0x4012ABD2 'any' 'backpack'
-    useobject 0x4012ABD2
+  if @findobject 0x405CA2D0 'any' 'backpack'
+    useobject 0x405CA2D0
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1AE3 'any' 'backpack' 'any'  //SKULL VERTICAL FACING LEFT
-  if @findobject 0x401E322A 'any' 'backpack'
-    useobject 0x401E322A
+  if @findobject 0x4032E9FA 'any' 'backpack'
+    useobject 0x4032E9FA
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1AE1 'any' 'backpack' 'any'  //SKULL HORIZONTAL RIGHT
-  if @findobject 0x4021B6C3 'any' 'backpack'
-    useobject 0x4021B6C3
+  if @findobject 0x40247B9A 'any' 'backpack'
+    useobject 0x40247B9A
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
@@ -224,120 +225,120 @@ if findtype 0x1B1C 'any' 'backpack' 'any'  //SPINE SLANT NORTH EAST
   endif
 endif
 if findtype 0x1B0A 'any' 'backpack' 'any'  //BONE PILE SMALL RIB LEFT
-  if @findobject 0x4036B96D 'any' 'backpack'
-    useobject 0x4036B96D
+  if @findobject 0x402BD119 'any' 'backpack'
+    useobject 0x402BD119
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1B0E 'any' 'backpack' 'any'  //BONE PILE SMALL RIB RIGHT
-  if @findobject 0x4062C9AE 'any' 'backpack'
-    useobject 0x4062C9AE
+  if @findobject 0x40205F05 'any' 'backpack'
+    useobject 0x40205F05
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1B0C 'any' 'backpack' 'any'  //BONE PILE BIG RIB LEFT
-  if @findobject 0x401B0D8C 'any' 'backpack'
-    useobject 0x401B0D8C
+  if @findobject 0x402CE739 'any' 'backpack'
+    useobject 0x402CE739
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1B10 'any' 'backpack' 'any'  //BONE PILE BIG RIB RIGHT
-  if @findobject 0x4012A86C 'any' 'backpack'
-    useobject 0x4012A86C
+  if @findobject 0x40246420 'any' 'backpack'
+    useobject 0x40246420
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1B0B 'any' 'backpack' 'any'  //BONE PILE LONG SPINE SLANT SOUTHEAST
-  if @findobject 0x4035B284 'any' 'backpack'
-    useobject 0x4035B284
+  if @findobject 0x40301494 'any' 'backpack'
+    useobject 0x40301494
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1B0F 'any' 'backpack' 'any'  //BONE PILE LONG SPINE SLANT NORTHEAST
-  if @findobject 0x4063CE1E 'any' 'backpack'
-    useobject 0x4063CE1E
+  if @findobject 0x40246410 'any' 'backpack'
+    useobject 0x40246410
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1B0D 'any' 'backpack' 'any'  //BONE PILE L
-  if @findobject 0x40286C3E 'any' 'backpack'
-    useobject 0x40286C3E
+  if @findobject 0x4024641D 'any' 'backpack'
+    useobject 0x4024641D
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1B09 'any' 'backpack' 'any'  //BONE PILE L BACKWARDS
-  if @findobject 0x40329980 'any' 'backpack'
-    useobject 0x40329980
+  if @findobject 0x40205ED2 'any' 'backpack'
+    useobject 0x40205ED2
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1B18 'any' 'backpack' 'any'  //RIB NORTHEAST
-  if @findobject 0x4036C367 'any' 'backpack'
-    useobject 0x4036C367
+  if @findobject 0x405CA05C 'any' 'backpack'
+    useobject 0x405CA05C
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1B17 'any' 'backpack' 'any'  //RIB NORTHWEST
-  if @findobject 0x405C5512 'any' 'backpack'
-    useobject 0x405C5512
+  if @findobject 0x403424EC 'any' 'backpack'
+    useobject 0x403424EC
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1B1A 'any' 'backpack' 'any'  //BONE SHARD NORTHWEST
-  if @findobject 0x401A4147 'any' 'backpack'
-    useobject 0x401A4147
+  if @findobject 0x40246708 'any' 'backpack'
+    useobject 0x40246708
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1B19 'any' 'backpack' 'any'  //BONE SHARD NORTHEAST
-  if @findobject 0x4034DF4D 'any' 'backpack'
-    useobject 0x4034DF4D
+  if @findobject 0x4024670B 'any' 'backpack'
+    useobject 0x4024670B
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1E75 'any' 'backpack' 'any'  //UNFINISHED LEGS
-  if @findobject 0x401EB372 'any' 'backpack'
-    useobject 0x401EB372
+  if @findobject 0x40247BCD 'any' 'backpack'
+    useobject 0x40247BCD
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1CE2 'any' 'backpack' 'any'  //LEGS RIGHT
-  if @findobject 0x4027CCCA 'any' 'backpack'
-    useobject 0x4027CCCA
+  if @findobject 0x40247A70 'any' 'backpack'
+    useobject 0x40247A70
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1EB1 'any' 'backpack' 'any'  //STAVES FACING NORTHEAST TOP SLANT LEFT
-  if @findobject 0x401E28CA 'any' 'backpack'
-    useobject 0x401E28CA
+  if @findobject 0x4024640C 'any' 'backpack'
+    useobject 0x4024640C
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
@@ -352,24 +353,24 @@ if findtype 0x1EB3 'any' 'backpack' 'any'  //STAVES FACING NORTHEAST BOTTOM SLAN
   endif
 endif
 if findtype 0x1EB2 'any' 'backpack' 'any'  //STAVES FACING NORTHWEST TOP SLANT LEFT
-  if @findobject 0x401A406F 'any' 'backpack'
-    useobject 0x401A406F
+  if @findobject 0x4032D3A0 'any' 'backpack'
+    useobject 0x4032D3A0
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1EB4 'any' 'backpack' 'any'  //STAVES FACING NORTHWEST BOTTOM SLANT LEFT
-  if @findobject 0x4032DEAB 'any' 'backpack'
-    useobject 0x4032DEAB
+  if @findobject 0x40205ECF 'any' 'backpack'
+    useobject 0x40205ECF
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1EB5 'any' 'backpack' 'any'  //UNFINISHED BARREL
-  if @findobject 0x401A5BBC 'any' 'backpack'
-    useobject 0x401A5BBC
+  if @findobject 0x40178882 'any' 'backpack'
+    useobject 0x40178882
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
@@ -384,32 +385,32 @@ if findtype 0x1E7A 'any' 'backpack' 'any'  //UNFINISHED DRAWERS FACING RIGHT
   endif
 endif
 if findtype 0x1E71 'any' 'backpack' 'any'  //UNFINISHED DRAWERS FACING LEFT
-  if @findobject 0x40369174 'any' 'backpack'
-    useobject 0x40369174
+  if @findobject 0x402C5913 'any' 'backpack'
+    useobject 0x402C5913
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1CE1 'any' 'backpack' 'any'  //HEADS SLANT LEFT
-  if @findobject 0x40322B71 'any' 'backpack'
-    useobject 0x40322B71
+  if @findobject 0x40247050 'any' 'backpack'
+    useobject 0x40247050
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1CE9 'any' 'backpack' 'any'  //HEADS SLANT RIGHT
-  if @findobject 0x4033DD6D 'any' 'backpack'
-    useobject 0x4033DD6D
+  if @findobject 0x40247051 'any' 'backpack'
+    useobject 0x40247051
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1E2B 'any' 'backpack' 'any'  //OARS 1ST ON LEFT
-  if @findobject 0x40340788 'any' 'backpack'
-    useobject 0x40340788
+  if @findobject 0x40247A7C 'any' 'backpack'
+    useobject 0x40247A7C
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
@@ -424,8 +425,8 @@ if findtype 0x1E2A 'any' 'backpack' 'any'  //OARS 2ND RIGHT
   endif
 endif
 if findtype 0x0FC5 'any' 'backpack' 'any'  //SHELL PURPLE YELLOW
-  if @findobject 0x40377FBA 'any' 'backpack'
-    useobject 0x40377FBA
+  if @findobject 0x40206411 'any' 'backpack'
+    useobject 0x40206411
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
@@ -448,8 +449,8 @@ if findtype 0x0FC4 'any' 'backpack' 'any'  //SHELL CONCH
   endif
 endif
 if findtype 0x0FCB 'any' 'backpack' 'any'  //SHELL CONCH SIDEWAYS
-  if @findobject 0x403407F0 'any' 'backpack'
-    useobject 0x403407F0
+  if @findobject 0x40247B79 'any' 'backpack'
+    useobject 0x40247B79
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
@@ -464,8 +465,8 @@ if findtype 0x0FC6 'any' 'backpack' 'any'  //SHELL WHITE BOTTOM ORANGE TOP
   endif
 endif
 if findtype 0x0FCA 'any' 'backpack' 'any'  //SHELL LESS WHITE BOTTOM ORANGE TOP
-  if @findobject 0x401E3114 'any' 'backpack'
-    useobject 0x401E3114
+  if @findobject 0x40247B7D 'any' 'backpack'
+    useobject 0x40247B7D
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
@@ -488,32 +489,32 @@ if findtype 0x0FC7 'any' 'backpack' 'any'  //SHELL NAUTILUS
   endif
 endif
 if findtype 0x0FCC 'any' 'backpack' 'any'  //SHELL PRETTY BLUE
-  if @findobject 0x4037FEF6 'any' 'backpack'
-    useobject 0x4037FEF6
+  if @findobject 0x400E6FC5 'any' 'backpack'
+    useobject 0x400E6FC5
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1CE5 'any' 'backpack' 'any'  //ARM 11 O'CLOCK
-  if @findobject 0x40519008 'any' 'backpack'
-    useobject 0x40519008
+  if @findobject 0x40300E53 'any' 'backpack'
+    useobject 0x40300E53
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1CDD 'any' 'backpack' 'any'  //ARM 2 O'CLOCK
-  if @findobject 0x402D57E24 'any' 'backpack'
-    useobject 0x402D57E24
+  if @findobject 0x40205EC9 'any' 'backpack'
+    useobject 0x40205EC9
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1B15 'any' 'backpack' 'any'  //PELVIS >
-  if @findobject 0x40397ED5 'any' 'backpack'
-    useobject 0x40397ED5
+  if @findobject 0x40247A8D 'any' 'backpack'
+    useobject 0x40247A8D
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
@@ -528,8 +529,8 @@ if findtype 0x1B16 'any' 'backpack' 'any'  //PELVIS <
   endif
 endif
 if findtype 0x1CE8 'any' 'backpack' 'any'  //TORSO NORTHEAST
-  if @findobject 0x40389A37 'any' 'backpack'
-    useobject 0x40389A37
+  if @findobject 0x40247BC5 'any' 'backpack'
+    useobject 0x40247BC5
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
@@ -544,16 +545,16 @@ if findtype 0x1CE0 'any' 'backpack' 'any'  //TORSO NORTHWEST
   endif
 endif
 if findtype 0x1047 'any' 'backpack' 'any'  //GLOBE THING ON RIGHT
-  if @findobject 0x4047F6F9 'any' 'backpack'
-    useobject 0x4047F6F9
+  if @findobject 0x402BDA3A 'any' 'backpack'
+    useobject 0x402BDA3A
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1048 'any' 'backpack' 'any'  //GLOBE THING ON LEFT
-  if @findobject 0x403494B1 'any' 'backpack'
-    useobject 0x403494B1
+  if @findobject 0x4039481C 'any' 'backpack'
+    useobject 0x4039481C
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
@@ -568,24 +569,24 @@ if findtype 0x0A2A 'any' 'backpack' 'any'  //STOOL
   endif
 endif
 if findtype 0x1E19 'any' 'backpack' 'any'  //FISHEAD FACING LEFT
-  if @findobject 0x40393314 'any' 'backpack'
-    useobject 0x40393314
+  if @findobject 0x40246FF8 'any' 'backpack'
+    useobject 0x40246FF8
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
 if findtype 0x1E1A 'any' 'backpack' 'any'  //FISHEAD FACING RIGHT
-  if @findobject 0x402BFA06 'any' 'backpack'
-    useobject 0x402BFA06
+  if @findobject 0x40246FF3 'any' 'backpack'
+    useobject 0x40246FF3
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500
   endif
 endif
-if findtype 0x1E1B 'any' 'backpack' 'any'  //FISHEAD 3 PACK
-  if @findobject 0x40366C69 'any' 'backpack'
-    useobject 0x40366C69
+if findtype 0x1E1B 'any' 'backpack' 'any'  //FISHEAD THREE PACK
+  if @findobject 0x4026888C 'any' 'backpack'
+    useobject 0x4026888C
     waitforgump 0xfcabeff9 15000
     replygump 0xfcabeff9 1
     pause 500

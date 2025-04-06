@@ -1,0 +1,5 @@
+useskill "Eval Int"
+waitfortarget 10000
+target 0x0003C9B2
+pause 1000
+

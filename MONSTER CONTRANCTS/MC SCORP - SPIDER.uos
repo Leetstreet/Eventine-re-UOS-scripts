@@ -1,0 +1,23 @@
+useobject contracts[4]
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "scorp"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "scorp"
+for 10
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "spider"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "spider"
+for 10
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor

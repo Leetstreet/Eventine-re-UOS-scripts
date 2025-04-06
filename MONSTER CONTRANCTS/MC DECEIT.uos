@@ -1,0 +1,90 @@
+useobject contracts[8]
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "spec"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "spec"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "shade"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "shade"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "liches"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "liches"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "mum"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "mum"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "skel"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "skel"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "wraith"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "wraith"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "Lord"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "Lord"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+useobject contracts[7]
+pause 500
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "water"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "water"
+for 3
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor

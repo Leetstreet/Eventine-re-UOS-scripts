@@ -1,0 +1,275 @@
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//Runebook Timer
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+if not timerexists 'RB'
+    createtimer 'RB'
+    settimer 'RB' 5500
+endif
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//Ore Graphics
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+if not listexists 'wood'
+    createlist 'wood'
+    pushlist 'wood' 0x1BDD
+endif
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//BOOK SETTER
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+if not @findalias 'redwood'
+    promptalias 'redwood'
+endif
+if not @findalias 'redwood2'
+    promptalias 'redwood2'
+endif
+if not @findalias 'redwood3'
+    promptalias 'redwood3'
+endif
+if not @findalias 'redwood4'
+    promptalias 'redwood4'
+endif
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//RECALL TO LOCATION
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+while timer 'RB' <= 650
+    pause 500
+endwhile
+useobject 'redwood'
+waitforgump 0x554b87f3 15000
+replygump 0x554b87f3 7
+settimer 'RB' 0
+pause 2500
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//MINING Section
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+@clearjournal
+while not @injournal 'not enough'
+    targetresource 0x4035DA90 'wood'
+pause 650
+endwhile
+pause 250
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//CUT UP WOOD USE KEY
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+while @findtype 0x1BDD 'any' 'backpack' 0
+    usetype 0x0F43 0x0000 'backpack' 0
+    waitfortarget 15000
+    target 'found'
+    pause 350
+endwhile
+clickobject 0x405D612F
+waitforcontext 0x405d612f 2 10000
+pause 250
+waitforgump 0x6abce12 15000
+pause 250
+replygump 0x6abce12 0 "" "0" "100"
+pause 650
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//REMOVE RUNE
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+useobject 'redwood'
+waitforgump 0x554b87f3 15000
+replygump 0x554b87f3 3
+settimer 'RB' 0
+while not @findtype 0x1f14 'any' 'backpack'
+    pause 500
+endwhile
+pause 1000
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//PUTS RUNE BACK
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+while @findtype 0x1f14 'any' 'backpack'
+    moveitem 'found' 'redwood'
+    pause 500
+endwhile
+pause 650
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//RECALL TO LOCATION
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+while timer 'RB' <= 650
+    pause 500
+endwhile
+useobject 'redwood2'
+waitforgump 0x554b87f3 15000
+replygump 0x554b87f3 7
+settimer 'RB' 0
+pause 2500
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//MINING Section
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+@clearjournal
+while not @injournal 'not enough'
+    targetresource 0x4035DA90 'wood'
+pause 650
+endwhile
+pause 250
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//CUT UP WOOD USE KEY
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+while @findtype 0x1BDD 'any' 'backpack' 0
+    usetype 0x0F43 0x0000 'backpack' 0
+    waitfortarget 15000
+    target 'found'
+    pause 350
+endwhile
+clickobject 0x405D612F
+waitforcontext 0x405d612f 2 10000
+pause 250
+waitforgump 0x6abce12 15000
+pause 250
+replygump 0x6abce12 0 "" "0" "100"
+pause 650
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//REMOVE RUNE
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+useobject 'redwood2'
+waitforgump 0x554b87f3 15000
+replygump 0x554b87f3 3
+settimer 'RB' 0
+while not @findtype 0x1f14 'any' 'backpack'
+    pause 500
+endwhile
+pause 1000
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//PUTS RUNE BACK
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+while @findtype 0x1f14 'any' 'backpack'
+    moveitem 'found' 'redwood2'
+    pause 500
+endwhile
+pause 650
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//RECALL TO LOCATION
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+while timer 'RB' <= 650
+    pause 500
+endwhile
+useobject 'redwood3'
+waitforgump 0x554b87f3 15000
+replygump 0x554b87f3 7
+settimer 'RB' 0
+pause 2500
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//MINING Section
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+@clearjournal
+while not @injournal 'not enough'
+    targetresource 0x4035DA90 'wood'
+pause 650
+endwhile
+pause 250
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//CUT UP WOOD USE KEY
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+while @findtype 0x1BDD 'any' 'backpack' 0
+    usetype 0x0F43 0x0000 'backpack' 0
+    waitfortarget 15000
+    target 'found'
+    pause 350
+endwhile
+clickobject 0x405D612F
+waitforcontext 0x405d612f 2 10000
+pause 250
+waitforgump 0x6abce12 15000
+pause 250
+replygump 0x6abce12 0 "" "0" "100"
+pause 650
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//REMOVE RUNE
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+useobject 'redwood3'
+waitforgump 0x554b87f3 15000
+replygump 0x554b87f3 3
+settimer 'RB' 0
+while not @findtype 0x1f14 'any' 'backpack'
+    pause 500
+endwhile
+pause 1000
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//PUTS RUNE BACK
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+while @findtype 0x1f14 'any' 'backpack'
+    moveitem 'found' 'redwood3'
+    pause 500
+endwhile
+pause 650
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//RECALL TO LOCATION
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+while timer 'RB' <= 650
+    pause 500
+endwhile
+useobject 'redwood4'
+waitforgump 0x554b87f3 15000
+replygump 0x554b87f3 7
+settimer 'RB' 0
+pause 2500
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//MINING Section
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+@clearjournal
+while not @injournal 'not enough'
+    targetresource 0x4035DA90 'wood'
+pause 650
+endwhile
+pause 250
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//CUT UP WOOD USE KEY
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+while @findtype 0x1BDD 'any' 'backpack' 0
+    usetype 0x0F43 0x0000 'backpack' 0
+    waitfortarget 15000
+    target 'found'
+    pause 350
+endwhile
+clickobject 0x405D612F
+waitforcontext 0x405d612f 2 10000
+pause 250
+waitforgump 0x6abce12 15000
+pause 250
+replygump 0x6abce12 0 "" "0" "100"
+pause 650
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//REMOVE RUNE
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+useobject 'redwood4'
+waitforgump 0x554b87f3 15000
+replygump 0x554b87f3 3
+settimer 'RB' 0
+while not @findtype 0x1f14 'any' 'backpack'
+    pause 500
+endwhile
+pause 1000
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//PUTS RUNE BACK
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+while @findtype 0x1f14 'any' 'backpack'
+    moveitem 'found' 'redwood4'
+    pause 500
+endwhile
+pause 650
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]
+//[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]=[=]

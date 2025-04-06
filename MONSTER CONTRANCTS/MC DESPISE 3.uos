@@ -1,0 +1,57 @@
+useobject contracts[9]
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "troll"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "troll"
+for 7
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "ogre"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "ogre"
+for 7
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "ettin"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "ettin"
+for 7
+pause 250
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 10
+endfor
+useobject contracts[7]
+pause 500
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "air"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "air"
+for 3
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "blood"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "blood"
+for 3
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor

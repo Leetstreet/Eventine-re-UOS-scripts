@@ -1,0 +1,27 @@
+if not @listexists 'contracts'
+    @createlist 'contracts'
+endif
+@clearlist 'contracts'
+pushlist 'contracts' 0x40602417 //Do these book 0
+pushlist 'contracts' 0x404F3B74 //Unsorted book 1
+pushlist 'contracts' 0x406023FE //OPHIDIAN Book 2
+pushlist 'contracts' 0x40121251 //Terr Book 3
+pushlist 'contracts' 0x404F3BB7 //LEVELING BOOK 4
+pushlist 'contracts' 0x404F3D12 // dreads / ww / frost spiders 5
+pushlist 'contracts' 0x404F3B8F //?????
+pushlist 'contracts' 0x404F3D21 //elementals 7
+pushlist 'contracts' 0x402B7612 //DECEIT 8
+pushlist 'contracts' 0x405D3B08 //DESPISE 9
+if not listexists 'contractbooks'
+    @createlist 'contractbooks'
+endif
+clearlist 'contractbooks'
+pushlist 'contractbooks' 0x40602417 //Do these book 0
+pushlist 'contractbooks' 0x406023FE //OPHIDIAN Book 2
+pushlist 'contractbooks' 0x40121251 //Terr Book 3
+pushlist 'contractbooks' 0x404F3BB7 //LEVELING BOOK 4
+pushlist 'contractbooks' 0x404F3D12 // dreads / lich lords / bloods 5
+//pushlist 'contractbooks' 0x404F3B8F //???
+pushlist 'contractbooks' 0x404F3D21 //elementals 7
+pushlist 'contractbooks' 0x402B7612 //DECEIT 8
+pushlist 'contractbooks' 0x405D3B08 //DESPISE 9

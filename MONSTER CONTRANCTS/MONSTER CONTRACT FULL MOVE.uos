@@ -1,0 +1,44 @@
+debug ts
+@clearignorelist
+while @findtype 0xAA8E 0x0000 'backpack' 0
+    waitforproperties 'found'
+        if  @property 'An Item Contract' 'found'
+        ignoreobject 'found'
+        elseif @property 'Killed: 0' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 5' 'found' and @property 'Killed: 5' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 5' 'found' and not @property 'Killed: 5' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 6' 'found' and not @property 'Killed: 6' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 7' 'found' and not @property 'Killed: 7' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 8' 'found' and not @property 'Killed: 8' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 9' 'found' and not @property 'Killed: 9' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 10' 'found' and not @property 'Killed: 10' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 11' 'found' and not @property 'Killed: 11' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 12' 'found' and not @property 'Killed: 12' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 13' 'found' and not @property 'Killed: 13' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 14' 'found' and not @property 'Killed: 14' 'found'
+        ignoreobject 'found'
+        elseif @property 'Needed: 15' 'found' and not @property 'Killed: 15' 'found'
+        ignoreobject 'found'
+        else
+        moveitem 'found' 0x401211ED
+        pause 650
+    endif
+endwhile
+headmsg 'all done'
+pause 1000
+//playmacro 'EBC.uos'
+//stop
+
+
+

@@ -1,4 +1,4 @@
-debug ts
+//debug ts
 if gumpexists 0x32a1ab0a
     replygump 0x32a1ab0a 0
 endif
@@ -27,9 +27,9 @@ while @movetype 0x0EED 'backpack'  fishing[3] 0 0 0 'any' 'any' 0
 endwhile
 endif
 if @findtype 0x099F 0x0000 'backpack' 0
-while @usetype 0x099F 'any' 'backpack' //ALE BOTTLE
-    pause 250
-endwhile
+//while @usetype 0x099F 'any' 'backpack' //ALE BOTTLE
+    //pause 250
+//endwhile
 pause 640
 endif
 if @findtype 0x14EC 0x0000 'backpack' 0

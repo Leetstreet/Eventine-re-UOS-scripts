@@ -1,0 +1,12 @@
+//PIRATE BURY CHEST
+usetype 0x0F39 0x0000 'backpack'
+waitfortarget 15000
+targettype 0x14EC 0x0000 0
+waitfortarget 15000
+targettype 0xA307 0x0000 0
+pause 1000
+waitforcontext 0x00021e8b 2 10000
+waitfortarget 10000
+targettype 0x14EE 0x0000 0
+pause 500
+canceltarget

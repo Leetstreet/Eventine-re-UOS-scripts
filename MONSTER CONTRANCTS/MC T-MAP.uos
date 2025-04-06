@@ -1,0 +1,118 @@
+useobject contracts[4]
+pause 500
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "gazer"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "gazer"
+for 10
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "harp"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "harp"
+for 10
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "garg"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "garg"
+for 10
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+useobject contracts[8]
+pause 500
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "liches"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "liches"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "lord"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "lord"
+for 10
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+useobject contracts[5]
+pause 500
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "dread"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "dread"
+for 10
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+useobject contracts[7]
+pause 500
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "blood"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "blood"
+for 10
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "air"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "air"
+for 10
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "earth"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "earth"
+for 10
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "water"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "water"
+for 10
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor

@@ -1,0 +1,34 @@
+useobject contracts[7]
+pause 500
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "fire"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "fire"
+for 5
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+useobject contracts[8]
+pause 500
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "liches"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "liches"
+for 5
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "Lords"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "Lords"
+for 5
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor

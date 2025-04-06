@@ -1,3 +1,4 @@
+//debug ts
 if not @findobject 'pole'
   promptalias 'pole'
 endif
@@ -8,6 +9,7 @@ targettileoffset 0 2 0
 while not @injournal 'You pull'
    @getenemy 'gray' 'closest'
   if @inrange 'enemy' 8
+    pause 500
     @clearhands 'both'
     pause 640
     equipitem fishing[4] 2

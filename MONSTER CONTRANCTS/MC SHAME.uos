@@ -1,0 +1,58 @@
+useobject 0x404F3D21
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "air"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "air"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "water"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "water"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "earth"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "earth"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+useobject 0x404F3BB7
+pause 500
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "harp"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "harp"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
+waitforgump 0x6d5af08f 15000
+replygump 0x6d5af08f 1
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 9501 "" "0" "gazer"
+waitforgump 0x61591c1a 15000
+replygump 0x61591c1a 0 "" "0" "gazer"
+for 5
+    pause 250
+    waitforgump 0x6d5af08f 15000
+    replygump 0x6d5af08f 10
+endfor
